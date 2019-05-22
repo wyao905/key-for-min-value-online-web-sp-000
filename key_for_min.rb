@@ -3,9 +3,11 @@
 
 def key_for_min_value(name_hash)
   temp = name_hash.first
-  if name_hash
-    name_hash.collect do |key, value|
-      if value > temp
+  big = 
+  name_hash.collect do |key, value|
+    if value == ""
+      return nil
+    elsif value > temp
         big = key
       end
     end
