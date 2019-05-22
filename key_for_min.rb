@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   collect = []
-  name_hash.collect do |first, value|
+  name_hash.collect do |key, value|
     collect << value
   end
   collect.each_with_index do |test, index|
@@ -14,5 +14,5 @@ def key_for_min_value(name_hash)
       val = index
     end
   end
-  return name_has[collect[val]]
+  return name_hash[collect[val]]
 end
