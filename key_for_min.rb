@@ -7,11 +7,11 @@ def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
     collect << value
   end
-  collect.each_with_index do |test, index|
+  collect.each_with_index do |tests, index|
     if index == 0
-      temp = test
-    elsif test < temp
-      temp = test
+      temp = tests
+    elsif tests < temp
+      temp = tests
       val = index
     end
   end
