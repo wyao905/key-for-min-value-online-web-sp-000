@@ -13,6 +13,7 @@ def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
     collect << value
   end
+  binding.pry
   
   collect.each_with_index do |tests, index|
     if index == 0
