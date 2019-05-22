@@ -11,11 +11,11 @@ def key_for_min_value(name_hash)
   
   name_hash.each do |key, value|
     if count == 0
-      temp = value
+      temp = key
     elsif value < temp
-      temp = value
+      temp = key
     end
     count += 1
   end
-  return temp
+  return name_hash[key]
 end
