@@ -4,6 +4,8 @@
 def key_for_min_value(name_hash)
   return nil if name_hash == {}
   collect = []
+  temp = nil
+  
   name_hash.collect do |key, value|
     collect << value
   end
